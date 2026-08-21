@@ -111,7 +111,7 @@ function shuffleArray(array) {
 // AI QUIZ GENERATOR
 // ==========================================
 
-app.post("/generate-quiz", async (req, res) => {
+app.post("/api/generate-quiz", async (req, res) => {
 
     try {
         const {
