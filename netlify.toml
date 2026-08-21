@@ -3,18 +3,10 @@
 
 [functions]
   node_bundler = "esbuild"
+  external_node_modules = ["express"]
 
 [[redirects]]
-  from = "/generate-notes"
-  to = "/.netlify/functions/api/generate-notes"
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
   status = 200
-
-[[redirects]]
-  from = "/generate-quiz"
-  to = "/.netlify/functions/api/generate-quiz"
-  status = 200
-
-[[redirects]]
-  from = "/"
-  to = "/.netlify/functions/api"
-  status = 200
+  force = true
