@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 // AI NOTES GENERATOR
 // ==========================================
 
-app.post("/generate-notes", async (req, res) => {
+app.post("/api/generate-notes", async (req, res) => {
     try {
         const { subject, topic, language } = req.body;
 
