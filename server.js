@@ -77,7 +77,7 @@ Return strictly structured JSON format:
 
 // ==========================================
 // AI QUIZ GENERATOR
-// ==========================================
+// ==========================================   
 
 // Helper function to shuffle array items
 function shuffleArray(array) {
