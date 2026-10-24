@@ -42,7 +42,7 @@ app.post("/generate-notes", async (req, res) => {
         }
 
         const response = await aiNotes.models.generateContent({
-            model: "gemini-3.8-flash", // Corrected model identifier
+            model: "gemini-4-argon", // Corrected model identifier
             contents: `
 You are an expert teacher.
 Create comprehensive study notes.
@@ -101,7 +101,7 @@ app.post("/generate-quiz", async (req, res) => {
         } = req.body;
 
         const response = await aiQuiz.models.generateContent({
-            model: "gemini-3.8-flash",
+            model: "gemini-4-argon",
             contents: `
 You are an expert quiz generator.
 Create ${questions} multiple choice questions.
